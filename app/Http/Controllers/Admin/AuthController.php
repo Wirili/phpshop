@@ -13,10 +13,12 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 class AuthController extends Controller
 {
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
-    protected $redirectTo = '/admin';
+    protected $redirectTo = '/admin/index';
+    protected $redirectAfterLogout='/admin/login';
     protected $guard = 'admin';
     protected $loginView = 'admin.auth.login';
     protected $registerView = 'admin.auth.register';
+
     //
     public function __construct()
     {

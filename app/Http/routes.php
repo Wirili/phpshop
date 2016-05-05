@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('admin/index', 'Admin\AdminController@index');
 Route::get('admin/login', 'Admin\AuthController@getLogin');
+Route::get('admin/logout', 'Admin\AuthController@logout');
 Route::post('admin/login', 'Admin\AuthController@postLogin');
 Route::get('admin/register', 'Admin\AuthController@getRegister');
 Route::post('admin/register', 'Admin\AuthController@postRegister');

@@ -25,10 +25,18 @@
 <div class="main-left">
     <h3 class="logo">后台管理</h3>
     <ul class="nav nav-pills nav-stacked custom-nav">
-        <li><a><i class="fa fa-home"></i><span>商品管理</span></a></li>
-        <li><a><i class="fa fa-home"></i><span>商品管理</span></a></li>
-        <li><a><i class="fa fa-home"></i><span>商品管理</span></a></li>
-        <li><a><i class="fa fa-home"></i><span>商品管理</span></a></li>
+        <li class="menu-list nav-stacked">
+            <a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span></a>
+            <ul class="sub-menu-list">
+                <li><a href="" target="mainframe">添加商品</a></li>
+                <li><a href="" target="mainframe">添加商品</a></li>
+                <li><a href="" target="mainframe">添加商品</a></li>
+                <li><a href="" target="mainframe">添加商品</a></li>
+            </ul>
+        </li>
+        <li class="menu-list"><a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span></a></li>
+        <li class="menu-list"><a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span></a></li>
+        <li class="menu-list"><a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span></a></li>
     </ul>
 </div>
 <div class="main-container">
@@ -86,6 +94,7 @@
 <!-- JavaScripts -->
 <script src="{{asset('js/jquery-2.2.3.min.js')}}"></script>
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="{{asset('js/app.js')}}"></script>
 {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>
 </html>

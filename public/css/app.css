@@ -1,0 +1,42 @@
+.login-layout {
+  background: #2e6da4;
+}
+
+.login-wrap {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.login-form a {
+  float: right;
+  color: #fff;
+}
+.login-form .col {
+  position: relative;
+  padding: 10px 0;
+}
+.login-form .login-checkbox {
+  color: #fff;
+  margin: 0;
+}
+.login-form .login-input {
+  display: block;
+  padding: 5px 10px 5px 34px;
+  font-size: 14px;
+  line-height: 32px;
+  width: 250px;
+  border: 0;
+  border-radius: 4px;
+}
+.login-form button {
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.login-form label.fa {
+  position: absolute;
+  display: block;
+  font-size: 14px;
+  top: 24px;
+  left: 14px;
+}

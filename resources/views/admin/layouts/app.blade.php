@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
     <!-- Styles -->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type='text/css'>
+    <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type='text/css'>
+    <link href="{{asset('css/app.css')}}" rel="stylesheet" type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,7 +32,7 @@
         }
     </style>
 </head>
-<body>
+<body class="login-layout">
 {{--<nav class="navbar navbar-default navbar-static-top">--}}
     {{--<div class="container">--}}
         {{--<div class="navbar-header">--}}

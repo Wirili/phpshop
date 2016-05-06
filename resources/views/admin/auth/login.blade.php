@@ -1,6 +1,29 @@
 @extends('admin.layouts.app')
 
 @section('content')
+    <div class="login-wrap">
+        <div class="login-logo"></div>
+        <div class="login-form">
+            <div class="col">
+                <input class="login-input" id="email" type="text" name="email" placeholder="管理员账号" title="管理员账号">
+                <label class="fa fa-user" for="email"></label>
+            </div>
+            <div class="col">
+                <input class="login-input" id="password" type="password" name="password" placeholder="管理员密码" title="管理员密码">
+                <label class="fa fa-lock" for="password"></label>
+            </div>
+            <div>
+                <label class="login-checkbox">
+                    <input type="checkbox" name="remember"> 下次自动登录
+                </label>
+                <a href="{{ url('admin/password/reset') }}">忘记密码</a>
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary btn-block">登 陆</button>
+            </div>
+        </div>
+        <div class="login-tip"></div>
+    </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">

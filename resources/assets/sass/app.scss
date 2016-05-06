@@ -1,12 +1,20 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+//登陆页面
 .login-layout{
   background: #2e6da4;
 }
 
 .login-wrap{
   width: 250px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+.login-logo{
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
 }
 .login-form{
   a{
@@ -23,7 +31,7 @@
   }
   .login-input{
     display: block;
-    padding: 5px 10px 5px 34px;
+    padding: 5px 10px 5px 38px;
     font-size: 14px;
     line-height: 32px;
     width: 250px;
@@ -38,8 +46,53 @@
   label.fa{
     position: absolute;
     display: block;
-    font-size: 14px;
-    top: 24px;
+    font-size: 18px;
+    color: #ccc;
+    top: 22px;
     left: 14px;
+  }
+  .help-block{
+    color: red;
+  }
+}
+
+//首页布局
+.main-top{
+  position: absolute;
+  top: 0;
+  left: 180px;
+  right: 0;
+  height: 42px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+
+.main-left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 180px;
+  background: #2e6da4;
+  .logo{
+    line-height: 41px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    background: #fafafa;
+  }
+}
+.custom-nav{
+  li > a{
+    color: #fff;
+    border-radius: 0;
+    padding: 12px 20px;
+    .fa{
+      font-size: 16px;
+      vertical-align: middle;
+      margin-right: 10px;
+      width: 16px;
+      text-align: center;
+    }
   }
 }

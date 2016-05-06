@@ -7,9 +7,6 @@
 
     <title>Laravel</title>
 
-    <!-- Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
     <!-- Styles -->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type='text/css'>
     <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type='text/css'>
@@ -21,16 +18,6 @@
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <style>
-        body {
-            font-family: 'Lato';
-        }
-
-        .fa-btn {
-            margin-right: 6px;
-        }
-    </style>
 </head>
 <body class="login-layout">
 {{--<nav class="navbar navbar-default navbar-static-top">--}}
@@ -81,7 +68,7 @@
 
 @yield('content')
 
-        <!-- JavaScripts -->
+<!-- JavaScripts -->
 <script src="{{asset('js/jquery-2.2.3.min.js')}}"></script>
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}

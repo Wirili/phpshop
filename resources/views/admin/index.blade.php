@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,76 +7,85 @@
 
     <title>Laravel</title>
 
-    <!-- Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
-
     <!-- Styles -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type='text/css'>
+    <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type='text/css'>
+    <link href="{{asset('css/app.css')}}" rel="stylesheet" type='text/css'>
 
-    <style>
-        body {
-            font-family: 'Lato';
-        }
-
-        .fa-btn {
-            margin-right: 6px;
-        }
-    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body id="app-layout">
-<nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-        <div class="navbar-header">
+<body>
 
-            <!-- Collapsed Hamburger -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+<div class="main-top"></div>
+<div class="main-left">
+    <h3 class="logo">后台管理</h3>
+    <ul class="nav nav-pills nav-stacked custom-nav">
+        <li><a><i class="fa fa-home"></i><span>商品管理</span></a></li>
+        <li><a><i class="fa fa-home"></i><span>商品管理</span></a></li>
+        <li><a><i class="fa fa-home"></i><span>商品管理</span></a></li>
+        <li><a><i class="fa fa-home"></i><span>商品管理</span></a></li>
+    </ul>
+</div>
+<div class="main-container">
+    <iframe id="mainframe" name="mainframe" src="" frameborder="0"></iframe>
+</div>
 
-            <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/') }}">
-                Laravel
-            </a>
-        </div>
+{{--<nav class="navbar navbar-default navbar-static-top">--}}
+    {{--<div class="container">--}}
+        {{--<div class="navbar-header">--}}
 
-        <div class="collapse navbar-collapse" id="app-navbar-collapse">
-            <!-- Left Side Of Navbar -->
-            <ul class="nav navbar-nav">
-                <li><a href="{{ url('/home') }}">Home</a></li>
-            </ul>
+            {{--<!-- Collapsed Hamburger -->--}}
+            {{--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">--}}
+                {{--<span class="sr-only">Toggle Navigation</span>--}}
+                {{--<span class="icon-bar"></span>--}}
+                {{--<span class="icon-bar"></span>--}}
+                {{--<span class="icon-bar"></span>--}}
+            {{--</button>--}}
 
-            <!-- Right Side Of Navbar -->
-            <ul class="nav navbar-nav navbar-right">
-                <!-- Authentication Links -->
-                @if (Auth::guard('admin')->guest())
-                    <li><a href="{{ url('admin/login') }}">Login</a></li>
-                    <li><a href="{{ url('admin/register') }}">Register</a></li>
-                @else
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ Auth::guard('admin')->user()->name }} <span class="caret"></span>
-                        </a>
+            {{--<!-- Branding Image -->--}}
+            {{--<a class="navbar-brand" href="{{ url('/') }}">--}}
+                {{--Laravel--}}
+            {{--</a>--}}
+        {{--</div>--}}
 
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ url('admin/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                        </ul>
-                    </li>
-                @endif
-            </ul>
-        </div>
-    </div>
-</nav>
+        {{--<div class="collapse navbar-collapse" id="app-navbar-collapse">--}}
+            {{--<!-- Left Side Of Navbar -->--}}
+            {{--<ul class="nav navbar-nav">--}}
+                {{--<li><a href="{{ url('/home') }}">Home</a></li>--}}
+            {{--</ul>--}}
+
+            {{--<!-- Right Side Of Navbar -->--}}
+            {{--<ul class="nav navbar-nav navbar-right">--}}
+                {{--<!-- Authentication Links -->--}}
+                {{--@if (Auth::guard('admin')->guest())--}}
+                    {{--<li><a href="{{ url('admin/login') }}">Login</a></li>--}}
+                    {{--<li><a href="{{ url('admin/register') }}">Register</a></li>--}}
+                {{--@else--}}
+                    {{--<li class="dropdown">--}}
+                        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">--}}
+                            {{--{{ Auth::guard('admin')->user()->name }} <span class="caret"></span>--}}
+                        {{--</a>--}}
+
+                        {{--<ul class="dropdown-menu" role="menu">--}}
+                            {{--<li><a href="{{ url('admin/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>--}}
+                        {{--</ul>--}}
+                    {{--</li>--}}
+                {{--@endif--}}
+            {{--</ul>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</nav>--}}
 
 @yield('content')
 
-        <!-- JavaScripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- JavaScripts -->
+<script src="{{asset('js/jquery-2.2.3.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
 {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>
 </html>

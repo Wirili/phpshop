@@ -1,11 +1,12 @@
 @extends('admin.layouts.app')
 
 @section('content')
-    <div class="login-wrap">
+    <div class="login-wrap" xmlns="http://www.w3.org/1999/html">
         <div class="login-logo"></div>
         <div class="login-form">
+            <form class="form-horizontal" role="form" method="POST" action="{{ url('admin/login') }}">
             <div class="col">
-                <input class="login-input" id="email" type="text" name="email" placeholder="管理员账号" title="管理员账号">
+                <input class="login-input" id="email" type="email" name="email" placeholder="管理员账号" title="管理员账号" value="{{ old('email') }}">
                 <label class="fa fa-user" for="email"></label>
             </div>
             <div class="col">
@@ -21,6 +22,7 @@
             <div class="col">
                 <button type="submit" class="btn btn-primary btn-block">登 陆</button>
             </div>
+            </form>
         </div>
         <div class="login-tip"></div>
     </div>

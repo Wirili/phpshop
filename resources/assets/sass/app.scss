@@ -55,6 +55,56 @@
 }
 
 //首页布局
+.mini{
+  .main-top{
+    left: 40px;
+  }
+  .main-left{
+    width: 40px;
+    h3{
+      display: none;
+    }
+    .menu-list > a {
+      padding: 12px 12px;
+      .fa{
+        margin-right: 0;
+      }
+      span,b{
+        display: none;
+      }
+    }
+    .menu-list.nav-hover {
+      &>a {
+        background: #265a88;
+        span {
+          background: #2e6da4;
+          display: block;
+          position: absolute;
+          min-width: 150px;
+          top: 0;
+          left: 40px;
+          padding: 12px 20px;
+          z-index: 10;
+        }
+      }
+      &>ul{
+        position: absolute;
+        display: block;
+        top: 44px;
+        left: 40px;
+        z-index: 11;
+        a{
+          min-width: 150px;
+        }
+      }
+    }
+
+  }
+  .main-container{
+    left: 40px;
+  }
+}
+
 .main-top{
   position: absolute;
   top: 0;
@@ -151,5 +201,19 @@
         text-decoration: none;
       }
     }
+  }
+}
+
+.toggle-btn{
+  margin: 0;
+  width: 51px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  border-right: 1px solid #eee;
+  i{
+    padding:0;
+    margin:0;
   }
 }

@@ -19,13 +19,15 @@
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="mini">
 
-<div class="main-top"></div>
+<div class="main-top">
+    <a href="javascript:void(0);" class="toggle-btn"><i class="fa fa-bars"></i></a>
+</div>
 <div class="main-left">
     <h3 class="logo">后台管理</h3>
     <ul class="nav nav-pills nav-stacked custom-nav">
-        <li class="menu-list nav-stacked">
+        <li class="menu-list nav-stacked nav-hover">
             <a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span><b class="fa fa-angle-down"></b></a>
             <ul class="sub-menu-list">
                 <li><a href="" target="mainframe">添加商品</a></li>

@@ -100,6 +100,10 @@
 .custom-nav{
   .nav-active{
     background: #265a88;
+    b{
+      transform: rotate(180deg);
+      transition: all 0.2s ease-out 0s;
+    }
   }
   li+li{
     margin-top: 0;
@@ -108,18 +112,24 @@
     color: #fff;
     border-radius: 0;
     padding: 12px 20px;
-    &:hover,&:active{
-      background: #204d74;
-    }
     &:focus {
       background: inherit;
     }
+    &:hover,&:active{
+      background: #265a88;
+    }
+
     .fa{
       font-size: 16px;
       vertical-align: middle;
       margin-right: 10px;
       width: 16px;
       text-align: center;
+    }
+    b{
+      position: absolute;
+      right:0;
+      transition: all 0.2s ease-out 0s;
     }
   }
   .sub-menu-list{
@@ -128,6 +138,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    background: #265a88;
     li > a {
       color: #fff;
       display: block;
@@ -136,6 +147,7 @@
       -webkit-transition: all 0.2s ease-out 0s;
       transition: all 0.2s ease-out 0s;
       &:hover,&:active,&:focus{
+        background: #204d74;
         text-decoration: none;
       }
     }

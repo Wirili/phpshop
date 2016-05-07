@@ -26,7 +26,7 @@
     <h3 class="logo">后台管理</h3>
     <ul class="nav nav-pills nav-stacked custom-nav">
         <li class="menu-list nav-stacked">
-            <a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span></a>
+            <a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span><b class="fa fa-angle-down"></b></a>
             <ul class="sub-menu-list">
                 <li><a href="" target="mainframe">添加商品</a></li>
                 <li><a href="" target="mainframe">添加商品</a></li>
@@ -34,7 +34,15 @@
                 <li><a href="" target="mainframe">添加商品</a></li>
             </ul>
         </li>
-        <li class="menu-list"><a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span></a></li>
+        <li class="menu-list">
+            <a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span><b class="fa fa-angle-down"></b></a>
+            <ul class="sub-menu-list">
+                <li><a href="" target="mainframe">添加商品</a></li>
+                <li><a href="" target="mainframe">添加商品</a></li>
+                <li><a href="" target="mainframe">添加商品</a></li>
+                <li><a href="" target="mainframe">添加商品</a></li>
+            </ul>
+        </li>
         <li class="menu-list"><a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span></a></li>
         <li class="menu-list"><a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span></a></li>
     </ul>

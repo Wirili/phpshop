@@ -22,9 +22,6 @@ $(function(){
             }
         }
     });
-    $('.toggle-btn').on('click',function(){
-        $('body').addClass('mini');
-    });
 
     function visibleSubMenuClose() {
         $('.menu-list').each(function() {

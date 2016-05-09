@@ -52,10 +52,10 @@
             </ul>
         </li>
         <li class="menu-list">
-            <a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span><b class="fa fa-angle-down"></b></a>
+            <a href="javascript:void(0);"><i class="fa fa-home"></i><span>文章管理</span><b class="fa fa-angle-down"></b></a>
             <ul class="sub-menu-list">
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
+                <li><a href="" target="mainframe">添加文章</a></li>
+                <li><a href="" target="mainframe">文章类别</a></li>
                 <li><a href="" target="mainframe">添加商品</a></li>
                 <li><a href="" target="mainframe">添加商品</a></li>
             </ul>

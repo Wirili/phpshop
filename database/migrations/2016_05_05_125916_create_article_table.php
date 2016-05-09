@@ -28,6 +28,7 @@ class CreateArticleTable extends Migration
             $table->boolean('open_type')->default(0)->comment('');
             $table->string('link')->comment('');
             $table->string('description')->nullable()->comment('');
+            $table->timestamps();
         });
     }
 

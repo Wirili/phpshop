@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>后台管理</title>
 
     <!-- Styles -->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type='text/css'>
@@ -23,6 +23,10 @@
 
 <div class="main-top">
     <h3 class="logo">后台管理</h3>
+    <ul class="notification-menu">
+        <li><a class="dropdown-toggle" href="{{ url('admin/logout') }}">注销</a></li>
+        <li><a class="dropdown-toggle" href="javascript:void(0);">{{ Auth::guard('admin')->user()->name }}</a></li>
+    </ul>
 </div>
 <div class="main-left">
     <ul class="nav nav-pills nav-stacked custom-nav">
@@ -55,9 +59,8 @@
             <a href="javascript:void(0);"><i class="fa fa-home"></i><span>文章管理</span><b class="fa fa-angle-down"></b></a>
             <ul class="sub-menu-list">
                 <li><a href="" target="mainframe">添加文章</a></li>
+                <li><a href="{{URL::asset('admin/article/index')}}" target="mainframe">文章列表</a></li>
                 <li><a href="" target="mainframe">文章类别</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
             </ul>
         </li>
         <li class="menu-list"><a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span></a></li>

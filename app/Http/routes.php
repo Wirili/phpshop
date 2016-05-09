@@ -26,3 +26,6 @@ Route::post('admin/login', 'Admin\AuthController@postLogin');
 Route::get('admin/register', 'Admin\AuthController@getRegister');
 Route::post('admin/register', 'Admin\AuthController@postRegister');
 
+Route::get('admin/article/index', 'Admin\ArticleController@index');
+Route::get('admin/article/{id}/edit', 'Admin\ArticleController@edit');
+

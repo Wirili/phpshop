@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>后台管理</title>
+
+    <!-- Styles -->
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type='text/css'>
+    <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type='text/css'>
+    <link href="{{asset('css/app.css')}}" rel="stylesheet" type='text/css'>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body{font-size:12px;}
+    </style>
+</head>
+<body style="padding:5px;">
+
+@yield('content')
+
+<!-- JavaScripts -->
+<script src="{{asset('js/jquery-2.2.3.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="{{asset('js/app.js')}}"></script>
+{{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+</body>
+</html>

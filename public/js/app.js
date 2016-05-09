@@ -2,6 +2,9 @@
  * Created by w3324 on 2016/5/6.
  */
 $(function(){
+    //提示栏
+    $('[data-toggle="tooltip"]').tooltip();
+
     $('.menu-list').on('mouseover',function(){
         $(this).addClass('nav-hover');
     });

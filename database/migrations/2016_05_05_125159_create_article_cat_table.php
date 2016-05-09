@@ -22,6 +22,7 @@ class CreateArticleCatTable extends Migration
             $table->integer('sort_order')->default(50)->comment('');
             $table->boolean('show_in_nav')->default(0)->comment('');
             $table->integer('parent_id')->default(0)->comment('');
+            $table->timestamps();
         });
     }
 

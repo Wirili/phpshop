@@ -54,6 +54,24 @@
   }
 }
 
+.table{
+  .fa{
+    font-size: 16px;
+  }
+}
+
+.tab-content .touch-table{
+  margin: 0;
+  tr{
+    td{
+      vertical-align: center;
+    }
+    &:first-child td{
+      border-top: none;
+    }
+  }
+}
+
 .main-top{
   position: absolute;
   top: 0;
@@ -71,6 +89,23 @@
     margin: 0;
     background: #fafafa;
     float: left;
+  }
+}
+.notification-menu{
+  list-style: none;
+  li{
+    margin-top: 11px;
+    float: right;
+  }
+  .dropdown-toggle{
+    display: inline-block;
+    color: #000;
+    line-height: 30px;
+    padding: 0 15px;
+    border: none;
+    text-decoration: none;
+    border-radius: 0;
+    border-left: 1px solid #eee;
   }
 }
 
@@ -138,6 +173,7 @@
   .sub-menu-list{
     list-style: none;
     display: none;
+    font-size: 12px;
     margin: 0;
     padding: 0;
     border: none;
@@ -155,6 +191,10 @@
       }
     }
   }
+}
+
+.breadcrumb{
+  margin-bottom: 5px;
 }
 
 ::-webkit-scrollbar

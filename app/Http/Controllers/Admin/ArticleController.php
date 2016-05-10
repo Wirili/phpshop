@@ -36,6 +36,13 @@ class ArticleController extends Controller
         return view('admin.article_edit', ['article' => $article, 'article_cat' => $article_cat]);
     }
 
+    public function create()
+    {
+        $article = new Article();
+        $article_cat = ArticleCat::all();
+        return view('admin.article_edit', ['article' => $article, 'article_cat' => $article_cat]);
+    }
+
     public function save(Request $request)
     {
         if ($request->has('article_id')) {

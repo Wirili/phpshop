@@ -28,6 +28,7 @@ Route::post('admin/register', 'Admin\AuthController@postRegister');
 
 Route::get('admin/article/index', 'Admin\ArticleController@index');
 Route::get('admin/article/{id}/edit', 'Admin\ArticleController@edit');
+Route::get('admin/article/create', 'Admin\ArticleController@create');
 Route::get('admin/article/ajax', 'Admin\ArticleController@ajax');
 Route::post('admin/article/save', 'Admin\ArticleController@save');
 

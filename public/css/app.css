@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  font-family: "Microsoft YaHei UI";
+}
+
 .login-layout {
   background: #2e6da4;
 }
@@ -66,6 +70,10 @@
 
 .table .fa {
   font-size: 16px;
+}
+
+.form-control {
+  font-size: 12px;
 }
 
 .tab-content .touch-table {
@@ -144,7 +152,6 @@
 }
 .custom-nav .nav-active b {
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;

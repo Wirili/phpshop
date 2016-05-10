@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\Article;
-use Symfony\Component\Console\Input\Input;
+use App\Models\ArticleCat;
 
 class ArticleController extends Controller
 {
@@ -32,7 +32,12 @@ class ArticleController extends Controller
     public function edit($id)
     {
         $article=Article::find($id);
-        return view('admin.article_edit',['article'=>$article]);
+        $article_cat=ArticleCat::all();
+        return view('admin.article_edit',['article'=>$article,'article_cat'=>$article_cat]);
+    }
+
+    public function save(){
+        return $this->sysMsg('文章保存成功');
     }
 
     public function ajax(Request $request){

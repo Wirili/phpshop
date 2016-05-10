@@ -1,4 +1,7 @@
 //登陆页面
+body{
+  font-family: "Microsoft YaHei UI";
+}
 .login-layout{
   background: #2e6da4;
 }
@@ -71,6 +74,10 @@
   .fa{
     font-size: 16px;
   }
+}
+
+.form-control{
+  font-size: 12px;
 }
 
 .tab-content .touch-table{

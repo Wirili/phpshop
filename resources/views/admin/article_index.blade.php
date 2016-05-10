@@ -41,13 +41,19 @@
             "autoWidth":false,
             "processing":true,
             "serverSide":true,
+            "lengthChange":true,
+            "searching":false,
+            "stateSave":true,
             "ajax":{
                 "url":"{{url('admin/article/ajax')}}"
             },
             "columns":[
                 {"data":'article_id'},
                 {"data":'title'},
-                {"data":'article_cat.cat_name'},
+                {
+                    "data":'article_cat.cat_name',
+                    "orderable":false
+                },
                 {"data":'is_open'},
                 {"data":'add_time'},
                 {
@@ -61,7 +67,7 @@
                     }
                 }
             ],
-            "order":[[2,"desc"]]
+            "order":[[0,"desc"]]
         });
     });
 </script>

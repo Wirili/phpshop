@@ -31,7 +31,7 @@
                                     <select id="cat_id" class="form-control" name="cat_id">
                                         <option value="0">选择类别</option>
                                         @foreach($article_cat as $item)
-                                            <option value="{{$item->cat_id}}">{{$item->cat_name}}</option>
+                                            <option value="{{$item->cat_id}}" @if($item->cat_id==$article->cat_id) selected @endif>{{$item->cat_name}}</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -39,7 +39,7 @@
                         </tr>
                         <tr>
                             <td width="120"><label for="is_open">是否显示</label></td>
-                            <td><div class="col-md-4"><input type="text" class="form-control" name="is_open" id="is_open"></div></td>
+                            <td><div class="col-md-4"><input type="checkbox" name="is_open" id="is_open" @if($article->is_open==1) checked @endif value="1"></div></td>
                         </tr>
                         <tr>
                             <td width="120"><label for="title">文章作者</label></td>
@@ -65,7 +65,7 @@
                 </div>
                 <div role="tabpanel" class="tab-pane" id="profile">
                     <!-- 加载编辑器的容器 -->
-                    <script id="container" name="content" style="height: 400px;" type="text/plain">{{$article->content}}</script>
+                    <script id="container" name="content" style="height: 400px;" type="text/plain">{!! $article->content !!}</script>
 
                     <!-- 实例化编辑器 -->
                     <script type="text/javascript">

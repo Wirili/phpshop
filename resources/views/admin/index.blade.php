@@ -11,6 +11,16 @@
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type='text/css'>
     <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type='text/css'>
     <link href="{{asset('css/app.css')}}" rel="stylesheet" type='text/css'>
+    {{--<link href="{{asset('css/jquery.dataTables.min.css')}}" rel="stylesheet" type='text/css'>--}}
+    <link href="{{asset('css/dataTables.bootstrap.min.css')}}" rel="stylesheet" type='text/css'>
+
+    <!-- JavaScripts -->
+    <script src="{{asset('js/jquery-1.12.3.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('js/dataTables.bootstrap.min.js')}}"></script>
+    <script src="{{asset('js/app.js')}}"></script>
+    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -118,11 +128,5 @@
 {{--</nav>--}}
 
 @yield('content')
-
-<!-- JavaScripts -->
-<script src="{{asset('js/jquery-2.2.3.min.js')}}"></script>
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
-<script src="{{asset('js/app.js')}}"></script>
-{{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>
 </html>

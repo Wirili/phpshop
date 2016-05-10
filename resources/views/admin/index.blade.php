@@ -78,7 +78,7 @@
     </ul>
 </div>
 <div class="main-container">
-    <iframe id="mainframe" name="mainframe" src="" frameborder="0"></iframe>
+    <iframe id="mainframe" name="mainframe" src="" frameborder="0" scrolling="yes" ></iframe>
 </div>
 
 {{--<nav class="navbar navbar-default navbar-static-top">--}}

@@ -37,7 +37,7 @@ class ArticleController extends Controller
 
     public function ajax(Request $request){
         $filter=$request->only(['draw','columns','order','start','length']);
-        $data = Article::forPage($filter['start']/$filter['length']+1,$filter['length'])->get();
+        $data = Article::with('article_cat')->forPage($filter['start']/$filter['length']+1,$filter['length'])->get();
         $recordsTotal=Article::all()->count();
         $recordsFiltered=Article::all()->count();
         return [

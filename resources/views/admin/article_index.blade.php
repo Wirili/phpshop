@@ -47,9 +47,19 @@
             "columns":[
                 {"data":'article_id'},
                 {"data":'title'},
-                {"data":'cat_id'},
+                {"data":'article_cat.cat_name'},
                 {"data":'is_open'},
                 {"data":'add_time'},
+                {
+                    "data":'article_id',
+                    "class":'text-center',
+                    "orderable":false,
+                    render:function(data,type,row){
+                        data="<a href='/admin/article/"+data+"/edit'><i class='fa fa-edit'></i></a>"
+                            +"<a href='/admin/article/"+data+"/del'><i class='fa fa-remove'></i></a>";
+                        return data;
+                    }
+                }
             ],
             "order":[[2,"desc"]]
         });

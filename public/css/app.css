@@ -54,6 +54,16 @@
   color: red;
 }
 
+.dataTables_wrapper .row {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 10px;
+}
+.dataTables_wrapper .col-lg-1, .dataTables_wrapper .col-lg-10, .dataTables_wrapper .col-lg-11, .dataTables_wrapper .col-lg-12, .dataTables_wrapper .col-lg-2, .dataTables_wrapper .col-lg-3, .dataTables_wrapper .col-lg-4, .dataTables_wrapper .col-lg-5, .dataTables_wrapper .col-lg-6, .dataTables_wrapper .col-lg-7, .dataTables_wrapper .col-lg-8, .dataTables_wrapper .col-lg-9, .dataTables_wrapper .col-md-1, .dataTables_wrapper .col-md-10, .dataTables_wrapper .col-md-11, .dataTables_wrapper .col-md-12, .dataTables_wrapper .col-md-2, .dataTables_wrapper .col-md-3, .dataTables_wrapper .col-md-4, .dataTables_wrapper .col-md-5, .dataTables_wrapper .col-md-6, .dataTables_wrapper .col-md-7, .dataTables_wrapper .col-md-8, .dataTables_wrapper .col-md-9, .dataTables_wrapper .col-sm-1, .dataTables_wrapper .col-sm-10, .dataTables_wrapper .col-sm-11, .dataTables_wrapper .col-sm-12, .dataTables_wrapper .col-sm-2, .dataTables_wrapper .col-sm-3, .dataTables_wrapper .col-sm-4, .dataTables_wrapper .col-sm-5, .dataTables_wrapper .col-sm-6, .dataTables_wrapper .col-sm-7, .dataTables_wrapper .col-sm-8, .dataTables_wrapper .col-sm-9, .dataTables_wrapper .col-xs-1, .dataTables_wrapper .col-xs-10, .dataTables_wrapper .col-xs-11, .dataTables_wrapper .col-xs-12, .dataTables_wrapper .col-xs-2, .dataTables_wrapper .col-xs-3, .dataTables_wrapper .col-xs-4, .dataTables_wrapper .col-xs-5, .dataTables_wrapper .col-xs-6, .dataTables_wrapper .col-xs-7, .dataTables_wrapper .col-xs-8, .dataTables_wrapper .col-xs-9 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .table .fa {
   font-size: 16px;
 }
@@ -125,11 +135,6 @@
   overflow: hidden;
 }
 .main-container iframe {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   height: 100%;
   width: 100%;
 }
@@ -139,6 +144,7 @@
 }
 .custom-nav .nav-active b {
   -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;

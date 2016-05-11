@@ -5,6 +5,9 @@
         <li><a href="#">{{trans('sys.home')}}</a></li>
         <li class="active">{{trans('article.list')}}</li>
     </ol>
+    <div class="pull-right mb5">
+        <a class="btn btn-primary" href="{{url('admin/article_cat/create')}}">{{trans('article.cat.add')}}</a>
+    </div>
     <table id="dt" class="table table-bordered table-striped table-hover">
         <thead>
         <tr align="center">

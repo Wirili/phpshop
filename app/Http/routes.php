@@ -37,4 +37,5 @@ Route::post('admin/article/save', 'Admin\ArticleController@save');
 Route::get('admin/article_cat/index', 'Admin\ArticleCatController@index');
 Route::get('admin/article_cat/{id}/edit', 'Admin\ArticleCatController@edit');
 Route::get('admin/article_cat/create', 'Admin\ArticleCatController@create');
+Route::post('admin/article_cat/save', 'Admin\ArticleCatController@save');
 

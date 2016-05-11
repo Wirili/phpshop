@@ -13,13 +13,19 @@
     <link href="{{asset('css/app.css')}}" rel="stylesheet" type='text/css'>
     {{--<link href="{{asset('css/jquery.dataTables.min.css')}}" rel="stylesheet" type='text/css'>--}}
     <link href="{{asset('css/dataTables.bootstrap.min.css')}}" rel="stylesheet" type='text/css'>
+    <link href="{{asset('css/buttons.bootstrap.min.css')}}" rel="stylesheet" type='text/css'>
 
     <!-- JavaScripts -->
     <script src="{{asset('js/jquery-1.12.3.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
+
     <script src="{{asset('js/jquery.dataTables.min.js')}}"></script>
     <script src="{{asset('js/dataTables.bootstrap.min.js')}}"></script>
+
+    <script src="{{asset('js/dataTables.buttons.min.js')}}"></script>
+    <script src="{{asset('js/buttons.bootstrap.min.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
+
     @include('UEditor::head')
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 

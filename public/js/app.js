@@ -20,7 +20,7 @@ $(function(){
         "sInfoPostFix": "",
         "sDecimal": "",
         "sThousands": ",",
-        "sLengthMenu": "每页显示条数: _MENU_",
+        "sLengthMenu": "每页数:_MENU_",
         "sLoadingRecords": "正在载入...",
         "sProcessing": "正在载入...",
         "sSearch": "搜索:",

@@ -22,12 +22,14 @@ class ArticleCatTableSeeder extends Seeder
             'cat_id'=>2,
             'cat_name'=>'帮助分类1',
             'keywords'=>'帮助words',
-            'cat_desc'=>'帮助desc'
+            'cat_desc'=>'帮助desc',
+            'parent_id'=>1
         ],[
             'cat_id'=>3,
             'cat_name'=>'帮助分类2',
             'keywords'=>'帮助words',
-            'cat_desc'=>'帮助desc'
+            'cat_desc'=>'帮助desc',
+            'parent_id'=>2
         ]];
         foreach ($list as $item){
             ArticleCat::create($item);

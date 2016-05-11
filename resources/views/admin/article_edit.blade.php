@@ -2,8 +2,9 @@
 
 @section('content')
 <ol class="breadcrumb">
-    <li><a href="#">首页</a></li>
-    <li><a href="#">文章管理</a></li>
+    <li><a href="">管理中心</a></li>
+    <li><a href="{{url('admin/article/index')}}">文章列表</a></li>
+    <li class="active">文章编辑</li>
 </ol>
 <div class="panel panel-default">
     <div class="panel-body">

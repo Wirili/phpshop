@@ -152,6 +152,7 @@ body {
 }
 .custom-nav .nav-active b {
   -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;

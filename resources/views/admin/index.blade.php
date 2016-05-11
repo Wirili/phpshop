@@ -70,7 +70,7 @@
             <ul class="sub-menu-list">
                 <li><a href="{{url('admin/article/create')}}" target="mainframe">添加文章</a></li>
                 <li><a href="{{url('admin/article/index')}}" target="mainframe">文章列表</a></li>
-                <li><a href="" target="mainframe">文章类别</a></li>
+                <li><a href="{{url('admin/article_cat/index')}}" target="mainframe">文章类别</a></li>
             </ul>
         </li>
         <li class="menu-list"><a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span></a></li>

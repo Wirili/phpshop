@@ -26,9 +26,13 @@ Route::post('admin/login', 'Admin\AuthController@postLogin');
 Route::get('admin/register', 'Admin\AuthController@getRegister');
 Route::post('admin/register', 'Admin\AuthController@postRegister');
 
+//文章路由
 Route::get('admin/article/index', 'Admin\ArticleController@index');
 Route::get('admin/article/{id}/edit', 'Admin\ArticleController@edit');
 Route::get('admin/article/create', 'Admin\ArticleController@create');
 Route::get('admin/article/ajax', 'Admin\ArticleController@ajax');
 Route::post('admin/article/save', 'Admin\ArticleController@save');
+
+//文章类别路由
+Route::get('admin/article_cat/index','Admin\ArticleCatController@index');
 

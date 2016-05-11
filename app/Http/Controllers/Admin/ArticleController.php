@@ -53,7 +53,7 @@ class ArticleController extends Controller
         }
         $artcile->title = $request->title;
         $artcile->cat_id = $request->cat_id;
-        $artcile->content = $request->content;
+        $artcile->contents = $request->contents;
         $artcile->author = $request->author;
         $artcile->author_email = $request->author_email;
         $artcile->keywords = $request->keywords;

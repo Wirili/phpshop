@@ -53,7 +53,18 @@
                         data: 'article_cat.cat_name',
                         orderable: false
                     },
-                    {data: 'is_open'},
+                    {
+                        data: 'is_open',
+                        className: 'text-center',
+                        render:function(data,type,row){
+                            if(data==1){
+                                data="<i class='fa fa-check text-success'></i>";
+                            }else{
+                                data="<i class='fa fa-remove text-danger'></i>"
+                            }
+                            return data;
+                        }
+                    },
                     {data: 'add_time'},
                     {
                         data: 'article_id',
@@ -61,7 +72,7 @@
                         orderable: false,
                         render: function (data, type, row) {
                             data = "<a href='/admin/article/" + data + "/edit'><i class='fa fa-edit'></i></a>"
-                                    + "<a href='/admin/article/" + data + "/del'><i class='fa fa-remove'></i></a>";
+                                    + "<a href='/admin/article/" + data + "/del' class='text-danger'><i class='fa fa-remove'></i></a>";
                             return data;
                         }
                     }

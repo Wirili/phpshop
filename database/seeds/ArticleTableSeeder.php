@@ -19,7 +19,7 @@ class ArticleTableSeeder extends Seeder
                 'article_id' => $i,
                 'cat_id' => 1,
                 'title' => '帮助',
-                'content' => 'adf',
+                'contents' => 'adf',
                 'author' => 'admin',
                 'author_email' => 'admin@qq.com',
                 'keywords' => '帮助',

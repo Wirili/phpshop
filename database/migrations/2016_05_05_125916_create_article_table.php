@@ -17,7 +17,7 @@ class CreateArticleTable extends Migration
             $table->increments('article_id')->comment('');
             $table->integer('cat_id')->comment('');
             $table->string('title')->comment('');
-            $table->longText('content')->comment('');
+            $table->longText('contents')->comment('');
             $table->string('author',30)->comment('');
             $table->string('author_email',60)->comment('');
             $table->string('keywords')->comment('');

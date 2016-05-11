@@ -30,6 +30,24 @@ class ArticleCatTableSeeder extends Seeder
             'keywords'=>'帮助words',
             'cat_desc'=>'帮助desc',
             'parent_id'=>2
+        ],[
+            'cat_id'=>4,
+            'cat_name'=>'分类',
+            'keywords'=>'帮助words',
+            'cat_desc'=>'帮助desc',
+            'parent_id'=>0
+        ],[
+            'cat_id'=>5,
+            'cat_name'=>'分类1',
+            'keywords'=>'帮助words',
+            'cat_desc'=>'帮助desc',
+            'parent_id'=>4
+        ],[
+            'cat_id'=>6,
+            'cat_name'=>'分类2',
+            'keywords'=>'帮助words',
+            'cat_desc'=>'帮助desc',
+            'parent_id'=>4
         ]];
         foreach ($list as $item){
             ArticleCat::create($item);

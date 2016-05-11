@@ -23,13 +23,13 @@
                     <table class="table table-hover touch-table">
                         <tr>
                             <td width="120"><label for="title">文章标题</label></td>
-                            <td><div class="col-md-4"><input type="text" class="form-control" name="title" id="title" value="{{$article->title}}"></div></td>
+                            <td><div class="col-md-4"><input type="text" class="form-control input-sm" name="title" id="title" value="{{$article->title}}"></div></td>
                         </tr>
                         <tr>
                             <td width="120"><label for="title">文章分类</label></td>
                             <td>
                                 <div class="col-md-4">
-                                    <select id="cat_id" class="form-control" name="cat_id">
+                                    <select id="cat_id" class="form-control input-sm" name="cat_id">
                                         <option value="0">选择类别</option>
                                         @foreach($article_cat as $item)
                                             <option value="{{$item->cat_id}}" @if($item->cat_id==$article->cat_id) selected @endif>{{$item->cat_name}}</option>
@@ -44,29 +44,29 @@
                         </tr>
                         <tr>
                             <td width="120"><label for="title">文章作者</label></td>
-                            <td><div class="col-md-4"><input type="text" class="form-control" name="author" id="author" value="{{$article->author}}"></div></td>
+                            <td><div class="col-md-4"><input type="text" class="form-control input-sm" name="author" id="author" value="{{$article->author}}"></div></td>
                         </tr>
                         <tr>
                             <td width="120"><label for="title">作者email</label></td>
-                            <td><div class="col-md-4"><input type="text" class="form-control" name="author_email" id="author_email" value="{{$article->author_email}}"></div></td>
+                            <td><div class="col-md-4"><input type="text" class="form-control input-sm" name="author_email" id="author_email" value="{{$article->author_email}}"></div></td>
                         </tr>
                         <tr>
                             <td width="120"><label for="title">关键字</label></td>
-                            <td><div class="col-md-4"><input type="text" class="form-control" name="keywords" id="keywords" value="{{$article->keywords}}"></div></td>
+                            <td><div class="col-md-4"><input type="text" class="form-control input-sm" name="keywords" id="keywords" value="{{$article->keywords}}"></div></td>
                         </tr>
                         <tr>
                             <td width="120"><label for="title">网页描述</label></td>
-                            <td><div class="col-md-4"><textarea class="form-control" rows="3" name="description" id="description" value="{{$article->description}}"></textarea></div></td>
+                            <td><div class="col-md-4"><textarea class="form-control input-sm" rows="3" name="description" id="description" value="{{$article->description}}"></textarea></div></td>
                         </tr>
                         <tr>
                             <td width="120"><label for="title">外部链接</label></td>
-                            <td><div class="col-md-4"><input type="text" class="form-control" name="link" id="link" value="{{$article->link}}"></div></td>
+                            <td><div class="col-md-4"><input type="text" class="form-control input-sm" name="link" id="link" value="{{$article->link}}"></div></td>
                         </tr>
                     </table>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="profile">
                     <!-- 加载编辑器的容器 -->
-                    <script id="container" name="content" style="height: 400px;" type="text/plain">{!! $article->content !!}</script>
+                    <script id="container" name="contents" style="height: 400px;" type="text/plain">{!! $article->contents !!}</script>
 
                     <!-- 实例化编辑器 -->
                     <script type="text/javascript">

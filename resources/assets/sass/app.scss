@@ -73,11 +73,15 @@ body{
 .table{
   .fa{
     font-size: 16px;
+    &.fa-minus-square-o,&.fa-plus-square-o{
+      font-size: 13px;
+      margin-right: 5px;
+    }
   }
 }
 
 .form-control{
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .tab-content .touch-table{
@@ -195,7 +199,7 @@ body{
   .sub-menu-list{
     list-style: none;
     display: none;
-    font-size: 12px;
+    font-size: 13px;
     margin: 0;
     padding: 0;
     border: none;

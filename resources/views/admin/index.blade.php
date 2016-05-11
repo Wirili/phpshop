@@ -32,49 +32,40 @@
 <body class="">
 
 <div class="main-top">
-    <h3 class="logo">后台管理</h3>
+    <h3 class="logo text-center"><i class="fa fa-home"></i> 后台管理</h3>
     <ul class="notification-menu">
-        <li><a class="dropdown-toggle" href="{{ url('admin/logout') }}">注销</a></li>
-        <li><a class="dropdown-toggle" href="javascript:void(0);">{{ Auth::guard('admin')->user()->name }}</a></li>
+        <li><a class="dropdown-toggle" href="{{ url('admin/logout') }}"><i class="fa fa-sign-out"></i> 注销</a></li>
+        <li><a class="dropdown-toggle" href="javascript:void(0);"><i class="fa fa-user"></i> {{ Auth::guard('admin')->user()->name }}</a></li>
     </ul>
 </div>
 <div class="main-left">
     <ul class="nav nav-pills nav-stacked custom-nav">
         <li class="menu-list nav-stacked">
-            <a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span><b class="fa fa-angle-down"></b></a>
+            <a href="javascript:void(0);"><i class="fa fa-file-text-o"></i><span>商品管理</span><b class="fa fa-angle-down"></b></a>
             <ul class="sub-menu-list">
+                <li><a href="" target="mainframe">商品列表</a></li>
                 <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
-                <li><a href="" target="mainframe">添加商品</a></li>
+                <li><a href="" target="mainframe">商品分类</a></li>
+                <li><a href="" target="mainframe">用户评论</a></li>
+                <li><a href="" target="mainframe">商品品牌</a></li>
+                <li><a href="" target="mainframe">商品类型</a></li>
+                <li><a href="" target="mainframe">商品回收站</a></li>
             </ul>
         </li>
         <li class="menu-list">
-            <a href="javascript:void(0);"><i class="fa fa-home"></i><span>文章管理</span><b class="fa fa-angle-down"></b></a>
+            <a href="javascript:void(0);"><i class="fa fa-wpforms"></i><span>文章管理</span><b class="fa fa-angle-down"></b></a>
             <ul class="sub-menu-list">
                 <li><a href="{{url('admin/article/create')}}" target="mainframe">添加文章</a></li>
                 <li><a href="{{url('admin/article/index')}}" target="mainframe">文章列表</a></li>
                 <li><a href="{{url('admin/article_cat/index')}}" target="mainframe">文章类别</a></li>
             </ul>
         </li>
-        <li class="menu-list"><a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span></a></li>
-        <li class="menu-list"><a href="javascript:void(0);"><i class="fa fa-home"></i><span>商品管理</span></a></li>
+        <li class="menu-list">
+            <a href="javascript:void(0);"><i class="fa fa-users"></i><span>权限管理</span><b class="fa fa-angle-down"></b></a>
+            <ul class="sub-menu-list">
+                <li><a href="" target="mainframe">管理员列表</a></li>
+            </ul>
+        </li>
     </ul>
 </div>
 <div class="main-container">

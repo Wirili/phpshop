@@ -90,6 +90,7 @@ body {
 
 .table .fa {
   font-size: 16px;
+  margin: 0 5px;
 }
 .table .fa.fa-minus-square-o, .table .fa.fa-plus-square-o {
   font-size: 13px;
@@ -176,7 +177,6 @@ body {
 }
 .custom-nav .nav-active b {
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;

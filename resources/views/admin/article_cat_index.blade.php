@@ -3,7 +3,7 @@
 @section('content')
     <ol class="breadcrumb">
         <li><a href="#">{{trans('sys.home')}}</a></li>
-        <li class="active">{{trans('article.list')}}</li>
+        <li class="active">{{trans('article.cat.list')}}</li>
     </ol>
     <div class="pull-right mb5">
         <a class="btn btn-primary" href="{{url('admin/article_cat/create')}}">{{trans('article.cat.add')}}</a>
@@ -14,7 +14,7 @@
             <th class="text-center">{{trans('article.cat.name')}}</th>
             <th class="text-center">{{trans('article.cat.desc')}}</th>
             <th class="text-center">{{trans('sys.sort')}}</th>
-            <th class="text-center">{{trans('sys.handle')}}</th>
+            <th class="text-center" width="100">{{trans('sys.handle')}}</th>
         </tr>
         </thead>
         <tbody>
@@ -36,8 +36,11 @@
            $('.treechange').on('click','.fa-minus-square-o',function(a){
                var lvl=parseInt(a.delegateTarget.className);
                $.each($(a.delegateTarget).nextAll(),function(){
-                   if(parseInt(this.className)>lvl)
+                   if(parseInt(this.className)>lvl) {
                        $(this).hide();
+                   }else{
+                       return false;
+                   }
                });
                $(this).removeClass('fa-minus-square-o');
                $(this).addClass('fa-plus-square-o');
@@ -45,8 +48,16 @@
            $('.treechange').on('click','.fa-plus-square-o',function(a,b,c){
                var lvl=parseInt(a.delegateTarget.className);
                $.each($(a.delegateTarget).nextAll(),function(){
-                   if(parseInt(this.className)>lvl)
+                   if(parseInt(this.className)>lvl) {
                        $(this).show();
+                       var me1=$(this).children('td:eq(0)').children('i');
+                       if(me1.hasClass('fa-plus-square-o')){
+                           me1.addClass('fa-minus-square-o');
+                           me1.removeClass('fa-plus-square-o');
+                       }
+                   }else {
+                       return false;
+                   }
                });
                $(this).addClass('fa-minus-square-o');
                $(this).removeClass('fa-plus-square-o');

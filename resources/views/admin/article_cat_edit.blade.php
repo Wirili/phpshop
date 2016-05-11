@@ -43,7 +43,7 @@
                     </tr>
                     <tr>
                         <td width="120"><label for="cat_desc">{{trans('article.cat.desc')}}</label></td>
-                        <td><div class="col-md-4"><textarea class="form-control input-sm" rows="3" name="cat_desc" id="cat_desc" value="{{$cat->cat_desc}}"></textarea></div></td>
+                        <td><div class="col-md-4"><textarea class="form-control input-sm" rows="3" name="cat_desc" id="cat_desc">{{$cat->cat_desc}}</textarea></div></td>
                     </tr>
                 </table>
                 <div style="margin: 10px 0 0;">

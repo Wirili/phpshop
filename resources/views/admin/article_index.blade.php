@@ -8,12 +8,12 @@
     <table id="dt" class="table table-bordered table-striped table-hover">
         <thead>
         <tr align="center">
-            <th class="text-center">{{trans('sys.id')}}</th>
+            <th class="text-center" width="60">{{trans('sys.id')}}</th>
             <th class="text-center">{{trans('article.title')}}</th>
             <th class="text-center">{{trans('article.cat_id')}}</th>
-            <th class="text-center">{{trans('article.is_open')}}</th>
-            <th class="text-center">{{trans('sys.create_time')}}</th>
-            <th class="text-center">{{trans('sys.handle')}}</th>
+            <th class="text-center" width="60">{{trans('article.is_open')}}</th>
+            <th class="text-center" width="100">{{trans('sys.create_time')}}</th>
+            <th class="text-center" width="100">{{trans('sys.handle')}}</th>
         </tr>
         </thead>
         {{--<tbody>--}}

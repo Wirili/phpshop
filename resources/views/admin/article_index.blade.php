@@ -74,8 +74,8 @@
                         className: 'text-center',
                         orderable: false,
                         render: function (data, type, row) {
-                            data = "<a href='/admin/article/" + data + "/edit' data-toggle='tooltip' data-placement='bottom' title='{{ trans('sys.edit') }}'><i class='fa fa-edit'></i></a>"
-                                    + "<a href='/admin/article/" + data + "/del' class='text-danger' data-toggle='tooltip' data-placement='bottom' title='{{ trans('sys.del') }}'><i class='fa fa-remove'></i></a>";
+                            data = "<a href='/admin/article/edit/" + data + "' data-toggle='tooltip' data-placement='bottom' title='{{ trans('sys.edit') }}'><i class='fa fa-edit'></i></a>"
+                                    + "<a href='/admin/article/del/" + data + "' class='text-danger' data-toggle='tooltip' data-placement='bottom' title='{{ trans('sys.del') }}'><i class='fa fa-remove'></i></a>";
                             return data;
                         }
                     }

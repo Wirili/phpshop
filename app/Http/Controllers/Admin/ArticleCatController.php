@@ -75,6 +75,17 @@ class ArticleCatController extends Controller
         return $this->sysMsg('文章类别保存成功');
     }
 
+
+    public function del($id)
+    {
+        $cat = ArticleCat::find($id);
+        if($cat->count()) {
+            $cat->delete();
+            return $this->sysMsg('文章类别删除成功');
+        }else
+            return $this->sysMsg('文章类别不存在');
+    }
+
     /**
      * 递归获取文章分类
      * @param int $parent_id

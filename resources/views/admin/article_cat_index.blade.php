@@ -2,16 +2,16 @@
 
 @section('content')
     <ol class="breadcrumb">
-        <li><a href="#">管理中心</a></li>
-        <li class="active">文章列表</li>
+        <li><a href="#">{{trans('sys.home')}}</a></li>
+        <li class="active">{{trans('article.list')}}</li>
     </ol>
     <table id="dt" class="table table-bordered table-striped table-hover">
         <thead>
         <tr align="center">
-            <th class="text-center">类别名称</th>
-            <th class="text-center">类别描述</th>
-            <th class="text-center">排序</th>
-            <th class="text-center">操作</th>
+            <th class="text-center">{{trans('article.cat.name')}}</th>
+            <th class="text-center">{{trans('article.cat.desc')}}</th>
+            <th class="text-center">{{trans('sys.sort')}}</th>
+            <th class="text-center">{{trans('sys.handle')}}</th>
         </tr>
         </thead>
         <tbody>
@@ -21,8 +21,8 @@
         <td>{{$item['cat_desc']}}</td>
         <td>{{$item['sort_order']}}</td>
         <td>
-        <a data-toggle="tooltip" data-placement="bottom" title="编辑" href="{{--{{url('admin/article_cat',['id'=>$item->article_id,'edit'=>'edit'])}}--}}"><i class="fa fa-edit"></i></a>
-        <a data-toggle="tooltip" data-placement="bottom" title="移除" href="#"><i class="fa fa-remove"></i></a>
+        <a data-toggle="tooltip" data-placement="bottom" title="{{trans('sys.edit')}}" href="{{--{{url('admin/article_cat',['id'=>$item->article_id,'edit'=>'edit'])}}--}}"><i class="fa fa-edit"></i></a>
+        <a class="text-danger" data-toggle="tooltip" data-placement="bottom" title="{{trans('sys.del')}}" href="#"><i class="fa fa-remove"></i></a>
         </td>
         </tr>
         @endforeach

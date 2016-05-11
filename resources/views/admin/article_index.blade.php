@@ -2,18 +2,18 @@
 
 @section('content')
     <ol class="breadcrumb">
-        <li><a href="#">管理中心</a></li>
-        <li class="active">文章列表</li>
+        <li><a href="#">{{trans('sys.home')}}</a></li>
+        <li class="active">{{trans('article.list')}}</li>
     </ol>
     <table id="dt" class="table table-bordered table-striped table-hover">
         <thead>
         <tr align="center">
-            <th class="text-center">编号</th>
-            <th class="text-center">标题</th>
-            <th class="text-center">分类</th>
-            <th class="text-center">是否显示</th>
-            <th class="text-center">添加日期</th>
-            <th class="text-center">操作</th>
+            <th class="text-center">{{trans('sys.id')}}</th>
+            <th class="text-center">{{trans('article.title')}}</th>
+            <th class="text-center">{{trans('article.cat_id')}}</th>
+            <th class="text-center">{{trans('article.is_open')}}</th>
+            <th class="text-center">{{trans('sys.create_time')}}</th>
+            <th class="text-center">{{trans('sys.handle')}}</th>
         </tr>
         </thead>
         {{--<tbody>--}}
@@ -34,7 +34,10 @@
     </table>
     <script>
         $(function () {
-            var table = $('#dt').DataTable({
+            var table = $('#dt').on('draw.dt',function(e, settings){
+                $('[data-toggle="tooltip"]').tooltip();
+            })
+            .DataTable({
                 pagingType: "full_numbers",
                 pageLength: 10,
                 autoWidth: false,
@@ -71,8 +74,8 @@
                         className: 'text-center',
                         orderable: false,
                         render: function (data, type, row) {
-                            data = "<a href='/admin/article/" + data + "/edit'><i class='fa fa-edit'></i></a>"
-                                    + "<a href='/admin/article/" + data + "/del' class='text-danger'><i class='fa fa-remove'></i></a>";
+                            data = "<a href='/admin/article/" + data + "/edit' data-toggle='tooltip' data-placement='bottom' title='{{ trans('sys.edit') }}'><i class='fa fa-edit'></i></a>"
+                                    + "<a href='/admin/article/" + data + "/del' class='text-danger' data-toggle='tooltip' data-placement='bottom' title='{{ trans('sys.del') }}'><i class='fa fa-remove'></i></a>";
                             return data;
                         }
                     }
@@ -87,13 +90,6 @@
                     ]
                 }
             });
-
-//        table.button().add(0,{
-//            action:function(e,dt,button,config){
-//
-//            },
-//            text:'新增'
-//        });
         });
     </script>
 @endsection

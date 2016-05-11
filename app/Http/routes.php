@@ -34,5 +34,7 @@ Route::get('admin/article/ajax', 'Admin\ArticleController@ajax');
 Route::post('admin/article/save', 'Admin\ArticleController@save');
 
 //文章类别路由
-Route::get('admin/article_cat/index','Admin\ArticleCatController@index');
+Route::get('admin/article_cat/index', 'Admin\ArticleCatController@index');
+Route::get('admin/article_cat/{id}/edit', 'Admin\ArticleCatController@edit');
+Route::get('admin/article_cat/create', 'Admin\ArticleCatController@create');
 

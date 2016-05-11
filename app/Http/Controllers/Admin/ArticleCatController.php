@@ -22,6 +22,20 @@ class ArticleCatController extends Controller
         return view('admin.article_cat_index',['cat_list'=>$cat_list]);
     }
 
+    public function edit($id)
+    {
+        $cat = ArticleCat::find($id);
+        $article_cat = ArticleCat::where('cat_id','<>',$id)->get();
+        return view('admin.article_cat_edit', ['cat' => $cat, 'article_cat' => $article_cat]);
+    }
+
+    public function create()
+    {
+        $cat = new ArticleCat();
+        $article_cat = ArticleCat::all();
+        return view('admin.article_cat_edit', ['cat' => $cat, 'article_cat' => $article_cat]);
+    }
+
     private function getCatList($parent_id,$level = 0,&$list=[]){
         $cat=ArticleCat::where('parent_id',$parent_id)->orderBy('sort_order')->get();
         foreach ($cat as $item) {

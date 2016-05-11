@@ -21,26 +21,21 @@ class ArticleController extends Controller
     {
 //        $list=Article::all()->forPage(1,15);
 //        return view('admin.article_index',['list'=>$list]);
-        return view('admin.article_index');
-    }
-
-    public function show($id)
-    {
-        return view('admin.article_show');
+        return view('admin.article.index');
     }
 
     public function edit($id)
     {
         $article = Article::find($id);
         $article_cat = ArticleCat::all();
-        return view('admin.article_edit', ['article' => $article, 'article_cat' => $article_cat]);
+        return view('admin.article.edit', ['article' => $article, 'article_cat' => $article_cat]);
     }
 
     public function create()
     {
         $article = new Article();
         $article_cat = ArticleCat::all();
-        return view('admin.article_edit', ['article' => $article, 'article_cat' => $article_cat]);
+        return view('admin.article.edit', ['article' => $article, 'article_cat' => $article_cat]);
     }
 
     public function save(Request $request)

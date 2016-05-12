@@ -62,6 +62,10 @@
                             <td width="120"><label for="link">{{trans('article.link')}}</label></td>
                             <td><div class="col-md-4"><input type="text" class="form-control input-sm" name="link" id="link" value="{{$article->link}}"></div></td>
                         </tr>
+                        <tr>
+                            <td width="120"><label for="file_url">{{trans('article.link')}}</label></td>
+                            <td><div class="col-md-4"><input type="text" class="form-control input-sm" name="file_url" id="file_url" value="{{$article->file_url}}"></div></td>
+                        </tr>
                     </table>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="profile">

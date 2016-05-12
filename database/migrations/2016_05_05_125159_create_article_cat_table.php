@@ -14,7 +14,7 @@ class CreateArticleCatTable extends Migration
     {
         //
         Schema::create('article_cat',function(Blueprint $table){
-            $table->increments('cat_id')->comment('');
+            $table->smallIncrements('cat_id')->comment('');
             $table->string('cat_name')->comment('');
             $table->boolean('cat_type')->default(1)->comment('');
             $table->string('keywords')->default('')->comment('');

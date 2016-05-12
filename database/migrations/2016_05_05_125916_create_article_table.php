@@ -15,7 +15,7 @@ class CreateArticleTable extends Migration
         //
         Schema::create('article',function(Blueprint $table){
             $table->increments('article_id')->comment('');
-            $table->integer('cat_id')->comment('');
+            $table->smallInteger('cat_id')->comment('');
             $table->string('title')->comment('');
             $table->longText('contents')->comment('');
             $table->string('author',30)->comment('');

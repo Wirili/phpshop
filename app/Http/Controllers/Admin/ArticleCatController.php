@@ -72,7 +72,7 @@ class ArticleCatController extends Controller
         $cat->keywords = $request->keywords;
         $cat->cat_desc = $request->cat_desc;
         $cat->save();
-        return $this->sysMsg('文章类别保存成功');
+        return $this->sysMsg('文章类别保存成功',\URL::action('Admin\ArticleCatController@index'));
     }
 
 
@@ -81,9 +81,9 @@ class ArticleCatController extends Controller
         $cat = ArticleCat::find($id);
         if($cat->count()) {
             $cat->delete();
-            return $this->sysMsg('文章类别删除成功');
+            return $this->sysMsg('文章类别删除成功',\URL::action('Admin\ArticleCatController@index'));
         }else
-            return $this->sysMsg('文章类别不存在');
+            return $this->sysMsg('文章类别不存在',\URL::action('Admin\ArticleCatController@index'));
     }
 
     /**

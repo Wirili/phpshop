@@ -70,7 +70,7 @@
                 </div>
                 <div role="tabpanel" class="tab-pane" id="profile">
                     <!-- 加载编辑器的容器 -->
-                    <script id="container" name="contents" style="height: 400px;" type="text/plain">{!! $article->contents !!}</script>
+                    <script id="container" name="contents" style="height: 400px; padding: 8px 0;" type="text/plain">{!! $article->contents !!}</script>
 
                     <!-- 实例化编辑器 -->
                     <script type="text/javascript">
@@ -81,6 +81,13 @@
                     </script>
                 </div>
             </div>
+            @if(count($errors)>0)
+                <div class="alert alert-danger">
+                    @foreach($errors->all() as $error)
+                        <p>{{ $error }}</p>
+                    @endforeach
+                </div>
+            @endif
             <div style="margin: 10px 0 0;">
                 <input type="hidden" name="article_id" value="{{$article->article_id}}">
                 <input type="submit" class="btn btn-primary" value="{{trans('sys.submit')}}">

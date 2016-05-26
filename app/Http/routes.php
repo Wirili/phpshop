@@ -19,7 +19,8 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('admin/index', 'Admin\AdminController@index');
+Route::get('admin', 'Admin\IndexController@index');
+Route::get('admin/index', 'Admin\IndexController@index');
 Route::get('admin/login', 'Admin\AuthController@getLogin');
 Route::get('admin/logout', 'Admin\AuthController@logout');
 Route::post('admin/login', 'Admin\AuthController@postLogin');
@@ -39,4 +40,8 @@ Route::get('admin/article_cat/edit/{id}', 'Admin\ArticleCatController@edit');
 Route::get('admin/article_cat/create', 'Admin\ArticleCatController@create');
 Route::post('admin/article_cat/save', 'Admin\ArticleCatController@save');
 Route::get('admin/article_cat/del/{id}', 'Admin\ArticleCatController@del');
+
+//管理员路由
+Route::get('admin/admin/index', 'Admin\AdminController@index');
+Route::get('admin/admin/ajax', 'Admin\AdminController@ajax');
 

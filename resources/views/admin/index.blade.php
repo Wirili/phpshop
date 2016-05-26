@@ -63,7 +63,7 @@
         <li class="menu-list">
             <a href="javascript:void(0);"><i class="fa fa-users"></i><span>权限管理</span><b class="fa fa-angle-down"></b></a>
             <ul class="sub-menu-list">
-                <li><a href="" target="mainframe">管理员列表</a></li>
+                <li><a href="{{url('admin/admin/index')}}" target="mainframe">管理员列表</a></li>
             </ul>
         </li>
     </ul>

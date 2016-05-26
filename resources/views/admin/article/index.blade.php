@@ -80,15 +80,7 @@
                         }
                     }
                 ],
-                order: [[0, "desc"]],
-                buttons:{
-                    buttons:[
-                        {
-                            text:'adfs',
-                            title:'dfasdf'
-                        }
-                    ]
-                }
+                order: [[0, "desc"]]
             });
         });
     </script>

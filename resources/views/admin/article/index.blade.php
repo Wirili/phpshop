@@ -68,7 +68,7 @@
                             return data;
                         }
                     },
-                    {data: 'add_time'},
+                    {data: 'created_at'},
                     {
                         data: 'article_id',
                         className: 'text-center',

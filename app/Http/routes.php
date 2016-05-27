@@ -27,6 +27,10 @@ Route::post('admin/login', 'Admin\AuthController@postLogin');
 Route::get('admin/register', 'Admin\AuthController@getRegister');
 Route::post('admin/register', 'Admin\AuthController@postRegister');
 
+//商品路由
+Route::get('admin/category/index', 'Admin\CategoryController@index');
+Route::get('admin/category/ajax', 'Admin\CategoryController@ajax');
+
 //文章路由
 Route::get('admin/article/index', 'Admin\ArticleController@index');
 Route::get('admin/article/edit/{id}', 'Admin\ArticleController@edit');

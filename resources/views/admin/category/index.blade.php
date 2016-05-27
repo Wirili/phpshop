@@ -28,8 +28,8 @@
                 </td>
                 <td>{{$item['sort_order']}}</td>
                 <td>
-                    <a data-toggle="tooltip" data-placement="bottom" title="{{trans('sys.edit')}}" href="{{url('admin/article_cat/edit',['id'=>$item['cat_id']])}}"><i class="fa fa-edit"></i></a>
-                    <a class="text-danger" data-toggle="tooltip" data-placement="bottom" title="{{trans('sys.del')}}" href="{{url('admin/article_cat/del',['id'=>$item['cat_id']])}}"><i class="fa fa-remove"></i></a>
+                    <a data-toggle="tooltip" data-placement="bottom" title="{{trans('sys.edit')}}" href="{{url('admin/category/edit',['id'=>$item['cat_id']])}}"><i class="fa fa-edit"></i></a>
+                    <a class="text-danger" data-toggle="tooltip" data-placement="bottom" title="{{trans('sys.del')}}" href="{{url('admin/category/del',['id'=>$item['cat_id']])}}"><i class="fa fa-remove"></i></a>
                 </td>
             </tr>
         @endforeach

@@ -16,21 +16,6 @@
             <th class="text-center" width="100">{{trans('sys.handle')}}</th>
         </tr>
         </thead>
-        {{--<tbody>--}}
-        {{--@foreach($list as $item)--}}
-        {{--<tr align="center">--}}
-        {{--<td>{{$item->article_id}}</td>--}}
-        {{--<td>{{$item->title}}</td>--}}
-        {{--<td>3</td>--}}
-        {{--<td>{{$item->is_open}}</td>--}}
-        {{--<td>{{$item->add_time}}</td>--}}
-        {{--<td>--}}
-        {{--<a data-toggle="tooltip" data-placement="bottom" title="编辑" href="{{url('admin/article',['id'=>$item->article_id,'edit'=>'edit'])}}"><i class="fa fa-edit"></i></a>--}}
-        {{--<a data-toggle="tooltip" data-placement="bottom" title="移除" href="#"><i class="fa fa-remove"></i></a>--}}
-        {{--</td>--}}
-        {{--</tr>--}}
-        {{--@endforeach--}}
-        {{--</tbody>--}}
     </table>
     <script>
         $(function () {
@@ -47,7 +32,8 @@
                 searching: false,
                 stateSave: true,
                 ajax: {
-                    url: "{{url('admin/article/ajax')}}"
+                    type:'POST',
+                    url: "{{URL::action('Admin\ArticleController@ajax',['_token'=>csrf_token()])}}"
                 },
                 columns: [
                     {data: 'article_id'},

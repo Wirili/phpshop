@@ -23,7 +23,7 @@ class ArticleCatController extends Controller
     public function index(){
 //        $cat_list=ArticleCat::where('parent_id',0)->get();
         $cat_list=$this->getCatList(0);
-        return view('admin.article.cat_index',['cat_list'=>$cat_list]);
+        return view('admin.articlecat.index',['cat_list'=>$cat_list]);
     }
 
     /**
@@ -37,7 +37,7 @@ class ArticleCatController extends Controller
         //不允许选择上级类别为子类别
         $child_cat=array_column($this->getCatList($id),'cat_id');
         $article_cat = ArticleCat::whereNotIn('cat_id',$child_cat)->get();
-        return view('admin.article.cat_edit', ['cat' => $cat, 'article_cat' => $article_cat]);
+        return view('admin.articlecat.edit', ['cat' => $cat, 'article_cat' => $article_cat]);
     }
 
     /**

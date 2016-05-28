@@ -43,7 +43,7 @@
         <li class="menu-list nav-stacked">
             <a href="javascript:void(0);"><i class="fa fa-file-text-o"></i><span>商品管理</span><b class="fa fa-angle-down"></b></a>
             <ul class="sub-menu-list">
-                <li><a href="sdf" target="mainframe">商品列表</a></li>
+                <li><a href="{{URL::action('Admin\GoodsController@index')}}" target="mainframe">商品列表</a></li>
                 <li><a href="" target="mainframe">添加商品</a></li>
                 <li><a href="{{url('admin/category/index')}}" target="mainframe">商品分类</a></li>
                 <li><a href="" target="mainframe">用户评论</a></li>
@@ -69,7 +69,7 @@
     </ul>
 </div>
 <div class="main-container">
-    <iframe id="mainframe" name="mainframe" src="" frameborder="0" scrolling="yes" ></iframe>
+    <iframe id="mainframe" name="mainframe" src="{{url('admin/welcome')}}" frameborder="0" scrolling="yes" ></iframe>
 </div>
 
 {{--<nav class="navbar navbar-default navbar-static-top">--}}

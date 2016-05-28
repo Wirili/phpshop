@@ -30,7 +30,8 @@
                 searching: false,
                 stateSave: true,
                 ajax: {
-                    url: "{{url('admin/admin/ajax')}}"
+                    type:'POST',
+                    url: "{{URL::action('Admin\AdminController@ajax',['_token'=>csrf_token()])}}"
                 },
                 columns: [
                     {data: 'user_id'},

@@ -29,6 +29,14 @@ Route::post('admin/login', 'Admin\AuthController@postLogin');
 Route::get('admin/register', 'Admin\AuthController@getRegister');
 Route::post('admin/register', 'Admin\AuthController@postRegister');
 
+//品牌路由
+Route::get('admin/brand/index', 'Admin\BrandController@index');
+Route::get('admin/brand/edit/{id}', 'Admin\BrandController@edit');
+Route::get('admin/brand/create', 'Admin\BrandController@create');
+Route::get('admin/brand/del/{id}', 'Admin\BrandController@del');
+Route::post('admin/brand/save', 'Admin\BrandController@save');
+Route::post('admin/brand/ajax', 'Admin\BrandController@ajax');
+
 //商品路由
 Route::get('admin/goods/index', 'Admin\GoodsController@index');
 Route::get('admin/goods/edit/{id}', 'Admin\GoodsController@edit');

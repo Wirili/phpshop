@@ -47,7 +47,7 @@
                 <li><a href="" target="mainframe">添加商品</a></li>
                 <li><a href="{{url('admin/category/index')}}" target="mainframe">商品分类</a></li>
                 <li><a href="" target="mainframe">用户评论</a></li>
-                <li><a href="" target="mainframe">商品品牌</a></li>
+                <li><a href="{{url('admin/brand/index')}}" target="mainframe">商品品牌</a></li>
                 <li><a href="" target="mainframe">商品类型</a></li>
                 <li><a href="" target="mainframe">商品回收站</a></li>
             </ul>

@@ -30,5 +30,6 @@ return [
     'is_new' => '新品',
     'is_best' => '精品',
     'keywords' => '关键字',
+    'description' => '简单描述',
     'pls' => '请选择类别',
 ];

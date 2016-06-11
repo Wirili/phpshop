@@ -28,8 +28,8 @@ class CreateGoodsTable extends Migration
             $table->decimal('market_price',10,2)->default(0)->comment('');
             $table->decimal('shop_price',10,2)->default(0)->comment('');
             $table->decimal('promote_price',10,2)->default(0)->comment('');
-            $table->timestamp('promote_start_date')->comment('');
-            $table->timestamp('promote_end_date')->comment('');
+            $table->timestamp('promote_start_date')->default(0)->comment('');
+            $table->timestamp('promote_end_date')->default(0)->comment('');
             $table->tinyInteger('warn_number')->default(1)->comment('');
             $table->string('keywords',255)->comment('');
             $table->string('goods_brief',255)->comment('');
@@ -61,8 +61,8 @@ class CreateGoodsTable extends Migration
             $table->boolean('store_best')->default(0)->comment('');
             $table->smallInteger('group_number')->default(0)->comment('');
             $table->boolean('is_xiangou')->default(0)->comment('');
-            $table->timestamp('xiangou_start_date')->comment('');
-            $table->timestamp('xiangou_end_date')->comment('');
+            $table->timestamp('xiangou_start_date')->default(0)->comment('');
+            $table->timestamp('xiangou_end_date')->default(0)->comment('');
             $table->integer('xiangou_num')->default(0)->comment('');
             $table->boolean('review_status')->default(1)->comment('');
             $table->string('review_content',255)->comment('');

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategoryTable extends Migration
+class CreateCategorysTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCategoryTable extends Migration
     public function up()
     {
         //
-        Schema::create('category',function(Blueprint $table){
+        Schema::create('categorys',function(Blueprint $table){
             $table->mediumIncrements('cat_id')->comment('');
             $table->string('cat_name',100)->comment('');
             $table->string('keywords',100)->comment('');
@@ -33,6 +33,6 @@ class CreateCategoryTable extends Migration
     public function down()
     {
         //
-        Schema::drop('category');
+        Schema::drop('categorys');
     }
 }

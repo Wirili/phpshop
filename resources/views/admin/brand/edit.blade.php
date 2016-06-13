@@ -30,6 +30,7 @@
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="brand_logo_img">{{trans('brand.brand_logo')}}</label>
                         <div class="col-md-4"><input type="file" class="input-sm" name="brand_logo_img" id="brand_logo_img"></div>
+                        <img src="{{$brand->brand_logo}}">
                     </div>
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="sort_order">{{trans('sys.sort')}}</label>

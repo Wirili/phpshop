@@ -66,8 +66,8 @@ class BrandController extends Controller
         $brand->brand_logo='';
         $file=$request->file('brand_logo_img');
         if($file){
-            Storage::disk('local')->put('img\asdfasdf.jpg',\File::get($file));
-            $brand->brand_logo = 'img\asdfasdf.jpg';
+            Storage::disk('images')->put('/data/images/asdfasdf.jpg',\File::get($file));
+            $brand->brand_logo = '/data/images/asdfasdf.jpg';
         }
         $brand->brand_name = $request->brand_name;
         $brand->sort_order = $request->input('sort_order',50);

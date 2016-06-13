@@ -66,3 +66,9 @@ Route::get('admin/article_cat/del/{id}', 'Admin\ArticleCatController@del');
 Route::get('admin/admin/index', 'Admin\AdminController@index');
 Route::post('admin/admin/ajax', 'Admin\AdminController@ajax');
 
+//获取图片
+Route::get('image/{filename}',[
+    'uses'=>'ImageController@getGoodImage',
+    'as'=>'good.image'
+]);
+

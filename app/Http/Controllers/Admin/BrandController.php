@@ -63,18 +63,25 @@ class BrandController extends Controller
         } else {
             $brand = new Brand();
         }
-        $brand->brand_logo='';
-        $file=$request->file('brand_logo_img');
-        if($file){
-            Storage::disk('images')->put('/data/images/asdfasdf.jpg',\File::get($file));
-            $brand->brand_logo = '/data/images/asdfasdf.jpg';
-        }
         $brand->brand_name = $request->brand_name;
         $brand->sort_order = $request->input('sort_order',50);
         $brand->is_show = $request->input('is_show',0);
         $brand->site_url = $request->site_url;
         $brand->brand_desc = $request->brand_desc;
         $brand->save();
+
+        $file=$request->file('brand_logo_img');
+        $filename="/data/images/".$brand->brand_id . "_".date('YmdHis').".jpg";
+
+        if($file){
+            if($brand->brand_logo && Storage::disk('images')->exists($brand->brand_logo)){
+                Storage::disk('images')->delete($brand->brand_logo);
+            }
+            Storage::disk('images')->put($filename,\File::get($file));
+            $brand->brand_logo = $filename;
+            $brand->update();
+        }
+
         return $this->sysMsg('品牌保存成功',\URL::action('Admin\BrandController@index'));
     }
 

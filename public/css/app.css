@@ -177,6 +177,7 @@ body {
 }
 .custom-nav .nav-active b {
   -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;
@@ -244,4 +245,8 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #65cea7;
+}
+
+.popover {
+  max-width: inherit;
 }

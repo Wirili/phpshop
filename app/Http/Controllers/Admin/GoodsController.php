@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\Goods;
 use App\Models\Category;
+use App\Models\Brand;
 
 class GoodsController extends Controller
 {
@@ -26,7 +27,8 @@ class GoodsController extends Controller
     {
         $goods = Goods::find($id);
         $goods_cat = Category::all();
-        return view('admin.goods.edit', ['goods' => $goods,'goods_cat'=>$goods_cat]);
+        $brands = Brand::all();
+        return view('admin.goods.edit', ['goods' => $goods,'goods_cat'=>$goods_cat,'brands'=>$brands]);
     }
 
     public function create()

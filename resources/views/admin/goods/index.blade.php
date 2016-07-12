@@ -2,22 +2,22 @@
 
 @section('content')
     <ol class="breadcrumb">
-        <li><a href="#">{{trans('sys.home')}}</a></li>
-        <li class="active">{{trans('goods.list')}}</li>
+        <li><a href="#">@lang('sys.home')</a></li>
+        <li class="active">@lang('goods.list')</li>
     </ol>
     <table id="dt" class="table table-bordered table-striped table-hover">
         <thead>
         <tr align="center">
-            <th class="text-center" width="40">{{trans('sys.id')}}</th>
-            <th class="text-center">{{trans('goods.goods_name')}}</th>
-            <th class="text-center">{{trans('goods.goods_sn')}}</th>
-            <th class="text-center" width="60">{{trans('goods.shop_price')}}</th>
-            <th class="text-center" width="40">{{trans('goods.is_on_sale')}}</th>
-            <th class="text-center" width="40">{{trans('goods.is_hot')}}</th>
-            <th class="text-center" width="40">{{trans('goods.is_new')}}</th>
-            <th class="text-center" width="40">{{trans('goods.is_best')}}</th>
-            <th class="text-center" width="100">{{trans('sys.create_time')}}</th>
-            <th class="text-center" width="100">{{trans('sys.handle')}}</th>
+            <th class="text-center" width="40">@lang('sys.id')</th>
+            <th class="text-center">@lang('goods.goods_name')</th>
+            <th class="text-center">@lang('goods.goods_sn')</th>
+            <th class="text-center" width="60">@lang('goods.shop_price')</th>
+            <th class="text-center" width="40">@lang('goods.is_on_sale')</th>
+            <th class="text-center" width="40">@lang('goods.is_hot')</th>
+            <th class="text-center" width="40">@lang('goods.is_new')</th>
+            <th class="text-center" width="40">@lang('goods.is_best')</th>
+            <th class="text-center" width="100">@lang('sys.create_time')</th>
+            <th class="text-center" width="100">@lang('sys.handle')</th>
         </tr>
         </thead>
     </table>

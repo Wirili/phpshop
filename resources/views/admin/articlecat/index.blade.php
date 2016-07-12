@@ -2,19 +2,19 @@
 
 @section('content')
     <ol class="breadcrumb">
-        <li><a href="#">{{trans('sys.home')}}</a></li>
-        <li class="active">{{trans('article.cat.list')}}</li>
+        <li><a href="#">@lang('sys.home')</a></li>
+        <li class="active">@lang('article.cat.list')</li>
     </ol>
     <div class="pull-right mb5">
-        <a class="btn btn-primary" href="{{url('admin/article_cat/create')}}">{{trans('article.cat.add')}}</a>
+        <a class="btn btn-primary" href="{{url('admin/article_cat/create')}}">@lang('article.cat.add')</a>
     </div>
     <table id="dt" class="table table-bordered table-striped table-hover">
         <thead>
         <tr align="center">
-            <th class="text-center">{{trans('article.cat.name')}}</th>
-            <th class="text-center">{{trans('article.cat.desc')}}</th>
-            <th class="text-center">{{trans('sys.sort')}}</th>
-            <th class="text-center" width="100">{{trans('sys.handle')}}</th>
+            <th class="text-center">@lang('article.cat.name')</th>
+            <th class="text-center">@lang('article.cat.desc')</th>
+            <th class="text-center">@lang('sys.sort')</th>
+            <th class="text-center" width="100">@lang('sys.handle')</th>
         </tr>
         </thead>
         <tbody>
@@ -24,8 +24,8 @@
         <td>{{$item['cat_desc']}}</td>
         <td>{{$item['sort_order']}}</td>
         <td>
-        <a data-toggle="tooltip" data-placement="bottom" title="{{trans('sys.edit')}}" href="{{url('admin/article_cat/edit',['id'=>$item['cat_id']])}}"><i class="fa fa-edit"></i></a>
-        <a class="text-danger" data-toggle="tooltip" data-placement="bottom" title="{{trans('sys.del')}}" href="{{url('admin/article_cat/del',['id'=>$item['cat_id']])}}"><i class="fa fa-remove"></i></a>
+        <a data-toggle="tooltip" data-placement="bottom" title="@lang('sys.edit')" href="{{url('admin/article_cat/edit',['id'=>$item['cat_id']])}}"><i class="fa fa-edit"></i></a>
+        <a class="text-danger" data-toggle="tooltip" data-placement="bottom" title="@lang('sys.del')" href="{{url('admin/article_cat/del',['id'=>$item['cat_id']])}}"><i class="fa fa-remove"></i></a>
         </td>
         </tr>
         @endforeach

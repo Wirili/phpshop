@@ -2,16 +2,16 @@
 
 @section('content')
     <ol class="breadcrumb">
-        <li><a href="#">{{trans('sys.home')}}</a></li>
-        <li class="active">{{trans('admin.list')}}</li>
+        <li><a href="#">@lang('sys.home')</a></li>
+        <li class="active">@lang('admin.list')</li>
     </ol>
     <table id="dt" class="table table-bordered table-striped table-hover">
         <thead>
         <tr align="center">
-            <th class="text-center" width="60">{{trans('sys.id')}}</th>
-            <th class="text-center">{{trans('admin.name')}}</th>
-            <th class="text-center">{{trans('admin.email')}}</th>
-            <th class="text-center" width="100">{{trans('sys.handle')}}</th>
+            <th class="text-center" width="60">@lang('sys.id')</th>
+            <th class="text-center">@lang('admin.name')</th>
+            <th class="text-center">@lang('admin.email')</th>
+            <th class="text-center" width="100">@lang('sys.handle')</th>
         </tr>
         </thead>
     </table>

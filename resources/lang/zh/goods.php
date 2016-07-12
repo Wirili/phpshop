@@ -22,6 +22,7 @@ return [
     'goods_name' => '商品名称',
     'goods_sn' => '商品货号',
     'cat_id' => '商品分类',
+    'brand_id' => '品牌',
     'shop_price' => '本店售价',
     'market_price' => '市场售价',
     'is_on_sale' => '上架',
@@ -31,5 +32,5 @@ return [
     'is_best' => '精品',
     'keywords' => '关键字',
     'description' => '简单描述',
-    'pls' => '请选择类别',
+    'pls' => '请选择',
 ];

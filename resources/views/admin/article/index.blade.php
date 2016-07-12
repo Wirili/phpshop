@@ -2,18 +2,18 @@
 
 @section('content')
     <ol class="breadcrumb">
-        <li><a href="#">{{trans('sys.home')}}</a></li>
-        <li class="active">{{trans('article.list')}}</li>
+        <li><a href="#">@lang('sys.home')</a></li>
+        <li class="active">@lang('article.list')</li>
     </ol>
     <table id="dt" class="table table-bordered table-striped table-hover">
         <thead>
         <tr align="center">
-            <th class="text-center" width="60">{{trans('sys.id')}}</th>
-            <th class="text-center">{{trans('article.title')}}</th>
-            <th class="text-center">{{trans('article.cat_id')}}</th>
-            <th class="text-center" width="60">{{trans('article.is_open')}}</th>
-            <th class="text-center" width="100">{{trans('sys.create_time')}}</th>
-            <th class="text-center" width="100">{{trans('sys.handle')}}</th>
+            <th class="text-center" width="60">@lang('sys.id')</th>
+            <th class="text-center">@lang('article.title')</th>
+            <th class="text-center">@lang('article.cat_id')</th>
+            <th class="text-center" width="60">@lang('article.is_open')</th>
+            <th class="text-center" width="100">@lang('sys.create_time')</th>
+            <th class="text-center" width="100">@lang('sys.handle')</th>
         </tr>
         </thead>
     </table>
